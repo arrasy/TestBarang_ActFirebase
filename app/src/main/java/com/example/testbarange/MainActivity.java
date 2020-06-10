@@ -1,13 +1,12 @@
 package com.example.testbarange;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class MainActivity extends AppCompatActivity {
-
     private Button bTambah;
     private Button bLihat;
 
@@ -25,11 +24,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(TambahData.getActIntent(MainActivity.this));
             }
         });
-
         bLihat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //lanjut besok
+                startActivity(LihatBarang.getActIntent(MainActivity.this));
             }
         });
     }
