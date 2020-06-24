@@ -5,6 +5,8 @@
     <string name="btUpdate">Update Data</string>
     <string name="btDelete">Delete Data</string>
     <string name="bOk">Submit Data</string>
+    <string name="bUp">Update Data</string>
+    <string name="bDel">Delete Data</string>
     <string name="eno">Kode Barang</string>
     <string name="enama">Nama Barang</string>
     <string name="txtJudul1">ACTIVITY</string>

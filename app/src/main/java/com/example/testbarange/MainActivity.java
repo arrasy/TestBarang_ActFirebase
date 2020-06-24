@@ -9,6 +9,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button bTambah;
     private Button bLihat;
+    private Button bUPdate;
+    private Button bDelete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         bTambah = (Button) findViewById(R.id.btnTambah);
         bLihat = (Button) findViewById(R.id.btnLihat);
+        bUPdate = (Button) findViewById(R.id.btnUpdate);
+        bDelete = (Button) findViewById(R.id.btnDelete);
 
         bTambah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,11 +28,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(TambahData.getActIntent(MainActivity.this));
             }
         });
+
         bLihat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(LihatBarang.getActIntent(MainActivity.this));
             }
         });
+
+        bUPdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(Update.getActIntent(MainActivity.this));
+            }
+        });
+
+        bDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(LihatBarang.getActIntent(MainActivity.this));
+            }
+        });
+
     }
 }
